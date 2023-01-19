@@ -1,0 +1,25 @@
+.bubble {
+  position: fixed;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background-color: rgba(209, 209, 209, 0.502);
+  animation: appear 1s ease-in;
+}
+
+@keyframes bubbleRoutine {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(15px);
+  }
+}
+
+@media screen and (max-width:440px) {
+  .bubble {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,27 @@
+.p {
+  font-size: 48px;
+  font-family: monospace;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  color: #D1D1D1;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .p {
+    font-size: 35px;
+  }
+}
