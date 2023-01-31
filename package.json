@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development",
     "view": "webpack-dev-server --mode production",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@types/jest": "^29.2.5",

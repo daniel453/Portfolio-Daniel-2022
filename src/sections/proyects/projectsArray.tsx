@@ -9,7 +9,7 @@ export const projects:card[] = [
     a2_title: 'Git Hub',
     a2_link: 'https://github.com/daniel453/Calculadora-js-vanilla', 
     alt: 'Calculadora js',
-    src: `./images/Calculadora.png`
+    src: `https://portafoliodaniel2022.000webhostapp.com/images/Calculadora.PNG`
   },
   {
     title: 'Pokedux',
@@ -19,7 +19,7 @@ export const projects:card[] = [
     a2_title: 'Git Hub',
     a2_link: 'https://github.com/daniel453/Pokedux',
     alt: 'Pokedux',
-    src: `./images/Pokedux.png`
+    src: `https://portafoliodaniel2022.000webhostapp.com/images/Pokedux.PNG`
   },
   {
     title: 'Todo list',
@@ -29,17 +29,17 @@ export const projects:card[] = [
     a2_title: 'Git Hub',
     a2_link: 'https://github.com/daniel453/Todo-List',
     alt: 'Todo-list',
-    src: `./images/TodoList.png`
+    src: `https://portafoliodaniel2022.000webhostapp.com/images/TodoList.PNG`
   },
   {
     title: 'Portafolio Daniel',
-    desc: 'Una aplicación web creada en React y empaquetada con Webpack que muestra el portafolio  Daniel 2022',
+    desc: 'Una aplicación web creada en React.ts y empaquetada con Webpack que muestra el portafolio  Daniel 2022',
     a_title: 'Ver',
-    a_link: '#',
+    a_link: 'https://portafoliodaniel2022.000webhostapp.com',
     a2_title: 'Git Hub',
     a2_link: 'https://github.com/daniel453/Portfolio-Daniel-2022',
     alt: 'Pokedux',
-    src: `./images/portafolio.png`
+    src: `https://portafoliodaniel2022.000webhostapp.com/images/portafolio.PNG`
   },
   {
     title: 'Fake Store',
@@ -49,6 +49,6 @@ export const projects:card[] = [
     a2_title: 'Git Hub',
     a2_link: 'https://github.com/daniel453/fake-store',
     alt: 'Pokedux',
-    src: `./images/fake-store.png`
+    src: `https://portafoliodaniel2022.000webhostapp.com/images/fake-store.PNG`
   }
 ]
