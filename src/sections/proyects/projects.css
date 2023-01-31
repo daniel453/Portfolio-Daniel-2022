@@ -1,0 +1,35 @@
+.projects {
+  width: 100%;
+  height: 100%;
+  background-color: #D9D9D9;
+  animation: appearToBottom 1s
+}
+
+.projects>h2 {
+  padding: 108px 0px 60px 0px;
+  font-size: 35px;
+  color: #333333;
+  text-align: center;
+}
+
+.projects__cont {
+  widows: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+  animation: appearToBottom 1s ease;
+  padding: 20px;
+}
+
+.projects__cont>h3 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width:1080px) {
+  .projects__cont {
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+}

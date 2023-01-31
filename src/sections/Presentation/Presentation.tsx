@@ -1,21 +1,25 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Bubble } from '../../components/bubble/Bubble'
 import { Button } from '../../components/button/Button'
 import { WriteMachineAnimationText } from '../../components/writeMachineAnimationText/WriteMachineAnimationText'
+import { Github } from '../../icons/github'
+import { Platzy } from '../../icons/platzy'
 import './presentation.css'
 
 interface presentation {
-  setSection: React.Dispatch<React.SetStateAction<"presentation" | "about me" | "projects">>
+  setSection: (section: "presentation" | "about me" | "projects", ref?: React.RefObject<HTMLElement> | undefined) => void
 }
 
 export function Presentation({ setSection }:presentation) {
-
+  const ref = useRef<HTMLElement>(null)
   const changeSection = (text:"presentation" | "about me" | "projects") => {
-    setSection(text)
+    if(ref.current) {
+      setSection(text,ref)
+    }
   }
 
   return (
-    <section className='presentation'>
+    <section className='presentation' ref={ref}>
       <div className='presentation__text'>
         <WriteMachineAnimationText
           fontWeight='bold'
@@ -40,7 +44,15 @@ export function Presentation({ setSection }:presentation) {
       <Bubble bottom='10%' right='10%'/>
       <Bubble bottom='10%' left='30%'/>
       <Bubble bottom='30%' left='15%'/>
-
+      
+      <div className='contact'>
+        <h2>Perfiles</h2>
+        <div className='contact__links'>
+          <Github fill='rgba(209, 209, 209)'/>
+          <Platzy />
+        </div>
+        <p><b>Gmail:</b> Daniel1946203@gmail.com</p>
+      </div>
     </section>
   )
 }

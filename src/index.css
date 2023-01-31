@@ -25,3 +25,33 @@ body {
     opacity: 1;
   }
 }
+
+@keyframes appearToTop {
+  from {
+    transform: translateY(300px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes appearToBottom {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translate();
+  }
+}
+
+@keyframes disappearSection {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 56px;
+  gap: 45px;
   width: 100%;
   height: 100vh;
   animation: appear 1s ease-in-out;
@@ -29,4 +29,32 @@
 
 .presentation__contLi>li {
   cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #D1D1D1;
+}
+
+.contact>h2 {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 4px solid #D1D1D1;
+  padding: 10px;
+}
+
+.contact>p {
+  font-size: 20px;
+}
+
+.contact__links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
